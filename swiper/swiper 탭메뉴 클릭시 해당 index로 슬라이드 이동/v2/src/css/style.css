@@ -1,0 +1,248 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button,
+pre {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+td,
+th {
+  padding: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+input,
+select,
+button,
+textarea {
+  padding: 0;
+  border: 1px solid #ddd;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+pre {
+  white-space: pre-line;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+a,
+span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* float */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cb:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1240px) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1 {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.code_review_box {
+  margin-top: 50px;
+  padding: 10px;
+  border-left: 5px solid #000;
+  background-color: #f9f9f9;
+}
+.code_review_box > pre > span {
+  font-weight: bold;
+}
+.code_review_box > pre > i {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: #eb5757;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.slide_ovh {
+  position: relative;
+  margin: 50px auto;
+  padding: 40px 0;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #ddd;
+}
+.slide_ovh .top_mask {
+  overflow: hidden;
+}
+.slide_ovh .top_mask .item > div {
+  width: 580px;
+}
+.slide_ovh .top_mask .item .img .cont {
+  background-color: #eee;
+}
+.slide_ovh .top_mask .item .img .cont > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #aaa;
+  transform: translate(-50%, -50%);
+}
+.slide_ovh .top_mask .item .img .mov_frame {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+.slide_ovh .top_mask .item .img .mov_frame .cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.slide_ovh .top_mask .item .txt_box {
+  opacity: 0;
+  transition: 0.5s all;
+}
+.slide_ovh .top_mask .item .txt_box .type {
+  line-height: 100%;
+  color: tomato;
+}
+.slide_ovh .top_mask .item .txt_box .tit {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+}
+.slide_ovh .top_mask .item .txt_box .txt_cont {
+  margin-top: 20px;
+}
+.slide_ovh .top_mask .item .txt_box .more_btn {
+  display: inline-block;
+  margin-top: 40px;
+  transition: 0.5s all;
+}
+.slide_ovh .top_mask .item .txt_box .more_btn:hover {
+  color: tomato;
+}
+.slide_ovh .top_mask .item.swiper-slide-active .txt_box {
+  opacity: 1;
+}
+.slide_ovh .arrow_btn {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  font-size: 60px;
+  line-height: 100%;
+  transition: 0.5s all;
+}
+.slide_ovh .arrow_btn:hover {
+  color: tomato;
+}
+.slide_ovh .arrow_btn.p {
+  left: -72px;
+}
+.slide_ovh .arrow_btn.n {
+  right: -72px;
+}
+.slide_ovh .bottom_ovh {
+  z-index: 10;
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  overflow: hidden;
+  width: 580px;
+}
+.slide_ovh .bottom_ovh .thumb_mask {
+  position: relative;
+  padding-bottom: 20px;
+}
+.slide_ovh .bottom_ovh .thumb_mask .item {
+  opacity: 0.5;
+  text-align: center;
+  cursor: pointer;
+}
+.slide_ovh .bottom_ovh .thumb_mask .item .img {
+  position: relative;
+  height: 76px;
+  background-color: #000;
+}
+.slide_ovh .bottom_ovh .thumb_mask .item .img > span {
+  color: #999;
+  line-height: 76px;
+}
+.slide_ovh .bottom_ovh .thumb_mask .item.swiper-slide-thumb-active {
+  opacity: 1;
+}
+.slide_ovh .bottom_ovh .thumb_mask .item.swiper-slide-thumb-active .img > span {
+  color: #fff;
+}
+.slide_ovh .bottom_ovh .thumb_mask .progressbar {
+  top: inherit;
+  bottom: 0;
+  background-color: #eee;
+}
+.slide_ovh .bottom_ovh .thumb_mask .progressbar .swiper-pagination-progressbar-fill {
+  background-color: #000;
+}
