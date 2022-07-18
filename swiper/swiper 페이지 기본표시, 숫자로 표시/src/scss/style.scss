@@ -1,0 +1,64 @@
+@import 'font.scss';
+@import 'reset.scss';
+
+.slide_wrap {
+  overflow: hidden;
+  margin: 50px auto;
+  .slide_mask {
+    .item {
+      position: relative;
+      height: 250px;
+      background-color: #eee;
+      > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .pager {
+      margin-top: 30px;
+      text-align: center;
+    }
+    &.slide_mask1 {
+      .pager {
+        > span {
+          width: 10px;
+          height: 10px;
+          background-color: #999;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: green;
+        }
+      }
+    }
+    &.slide_mask3 {
+      .pager {
+        position: relative;
+        width: 50px;
+        margin: 50px auto 0;
+        font-size: 0;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 40px;
+          width: 50px;
+          height: 2px;
+          background-color: #ddd;
+        }
+        > span {
+          display: inline-block;
+          font-size: 16px;
+          font-weight: bold;
+          vertical-align: middle;
+        }
+        .swiper-pagination-total {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}

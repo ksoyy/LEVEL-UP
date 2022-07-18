@@ -1,0 +1,177 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+form,
+fieldset,
+p,
+button,
+pre {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+td,
+th {
+  padding: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+input,
+select,
+button,
+textarea {
+  padding: 0;
+  border: 1px solid #ddd;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+pre {
+  white-space: pre-line;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+a,
+span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* float */
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.cb:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1240px) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1 {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.code_review_box {
+  margin-top: 50px;
+  padding: 10px;
+  border-left: 5px solid #000;
+  background-color: #f9f9f9;
+}
+.code_review_box > pre > span {
+  font-weight: bold;
+}
+.code_review_box > pre > i {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 5px;
+  color: #eb5757;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.slide_wrap {
+  overflow: hidden;
+  margin: 50px auto;
+}
+.slide_wrap .slide_mask .item {
+  position: relative;
+  height: 250px;
+  background-color: #eee;
+}
+.slide_wrap .slide_mask .item > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+}
+.slide_wrap .slide_mask .pager {
+  margin-top: 30px;
+  text-align: center;
+}
+.slide_wrap .slide_mask.slide_mask1 .pager > span {
+  width: 10px;
+  height: 10px;
+  background-color: #999;
+}
+.slide_wrap .slide_mask.slide_mask1 .pager .swiper-pagination-bullet-active {
+  background-color: green;
+}
+.slide_wrap .slide_mask.slide_mask3 .pager {
+  position: relative;
+  width: 50px;
+  margin: 50px auto 0;
+  font-size: 0;
+}
+.slide_wrap .slide_mask.slide_mask3 .pager::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  width: 50px;
+  height: 2px;
+  background-color: #ddd;
+}
+.slide_wrap .slide_mask.slide_mask3 .pager > span {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.slide_wrap .slide_mask.slide_mask3 .pager .swiper-pagination-total {
+  margin-left: 100px;
+}

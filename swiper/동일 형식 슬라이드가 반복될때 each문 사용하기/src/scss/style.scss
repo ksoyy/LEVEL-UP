@@ -1,0 +1,42 @@
+@import 'font.scss';
+@import 'reset.scss';
+
+.swiper-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin: 50px auto 0;
+  &:last-child {
+    margin: 50px auto 100px;
+  }
+  .swiper-slide {
+    position: relative;
+    height: 200px;
+    background-color: #fafafa;
+    > .num {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 20px;
+      font-weight: bold;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .pager {
+    margin: 20px auto 0;
+    text-align: center;
+  }
+  .arrow_btn {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    margin-top: calc(-50px / 2 - 21px);
+    font-size: 50px;
+    &.p {
+      left: 0;
+    }
+    &.n {
+      right: 0;
+    }
+  }
+}
