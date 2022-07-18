@@ -1,0 +1,47 @@
+@import 'font.scss';
+@import 'reset.scss';
+
+.slide_ovh {
+  width: 100%;
+  margin: 50px auto 0;
+  overflow: hidden;
+  .swiper-container {
+    .swiper-slide {
+      position: relative;
+      height: 200px;
+      background-color: #eee;
+      > p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+      }
+    }
+    .progress {
+      margin: 50px auto 0;
+      text-align: center;
+      .pager,
+      .play_bar {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .play_bar {
+        position: relative;
+        width: 100px;
+        height: 4px;
+        margin: 0 15px;
+        background-color: #eee;
+        .bar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          background-color: #333;
+        }
+      }
+    }
+  }
+}
