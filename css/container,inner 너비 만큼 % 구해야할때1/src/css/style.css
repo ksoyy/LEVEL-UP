@@ -1,0 +1,138 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button, pre {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  line-height: 150%;
+  font-weight: 300;
+}
+
+td, th {
+  padding: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 14px;
+  color: #333;
+  font-weight: 300;
+}
+
+input, select, button, textarea {
+  padding: 0;
+  border: 1px solid #ddd;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+pre {
+  white-space: pre-line;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+}
+
+a, span {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1240px) {
+  .container {
+    width: 90%;
+  }
+}
+
+h1 {
+  padding: 5px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+.box .inner {
+  width: 1200px;
+  height: 300px;
+  margin: 20px auto 0;
+  background-color: #ddd;
+}
+@media (max-width: 1240px) {
+  .box .inner {
+    width: 90%;
+  }
+}
+.box .arrow {
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  background-color: tomato;
+}
+.box.box1 .arrow.p {
+  left: calc(50% - 600px);
+}
+@media (max-width: 1240px) {
+  .box.box1 .arrow.p {
+    left: 5%;
+  }
+}
+.box.box1 .arrow.n {
+  right: calc(50% - 600px);
+}
+@media (max-width: 1240px) {
+  .box.box1 .arrow.n {
+    right: 5%;
+  }
+}
+@media (max-width: 1240px) {
+  .box.box2 .inner {
+    position: relative;
+  }
+}
+.box.box2 .arrow {
+  z-index: 10;
+}
+.box.box2 .arrow.p {
+  left: calc(50% - 600px);
+  margin-left: -40px;
+}
+@media (max-width: 1240px) {
+  .box.box2 .arrow.p {
+    left: 10%;
+    margin-left: 0;
+  }
+}
+.box.box2 .arrow.n {
+  right: calc(50% - 600px);
+  margin-right: -40px;
+}
+@media (max-width: 1240px) {
+  .box.box2 .arrow.n {
+    right: 10%;
+    margin-right: 0;
+  }
+}
+

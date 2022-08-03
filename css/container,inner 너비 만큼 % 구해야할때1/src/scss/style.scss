@@ -1,0 +1,67 @@
+@import 'font.scss';
+@import 'reset.scss';
+
+.box {
+  position: relative;
+  width: 100%;
+  background-color: #f1f1f1;
+  .inner {
+    width: 1200px;
+    height: 300px;
+    margin: 20px auto 0;
+    background-color: #ddd;
+    @include respond-to('d1000') {
+      width: 90%;
+    }
+  }
+  .arrow {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background-color: tomato;
+  }
+  &.box1 {
+    .arrow {
+      &.p {
+        left: calc(50% - 1200px / 2);
+        @include respond-to('d1000') {
+          left: 5%;
+        }
+      }
+      &.n {
+        right: calc(50% - 1200px / 2);
+        @include respond-to('d1000') {
+          right: 5%;
+        }
+      }
+    }
+  }
+  &.box2 {
+    .inner {
+      @include respond-to('d1000') {
+        position: relative;
+      }
+    }
+    .arrow {
+      z-index: 10;
+      &.p {
+        left: calc(50% - 1200px / 2);
+        margin-left: -40px;
+        @include respond-to('d1000') {
+          left: 10%;
+          margin-left: 0;
+        }
+      }
+      &.n {
+        right: calc(50% - 1200px / 2);
+        margin-right: -40px;
+        @include respond-to('d1000') {
+          right: 10%;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
